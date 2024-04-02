@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/public/css/login.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <div class="button-container">
+        <button
+          type="button"
+          class="button register-button"
+          onclick="redirectToRegister()"
+        >
+          Register
+        </button>
+        <button type="submit" class="button login-button">Login</button>
+      </div>
+    </form>
+    <div id="toaster" class="toaster"></div>
+
+    <script src="/public/js/login.js"></script>
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>

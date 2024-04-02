@@ -1,0 +1,13 @@
+version: '3'
+  
+services:
+  contextual:
+    build: .
+    volumes:
+      - ./share:/home/Contextual:ro
+      - ./xinetd:/etc/xinetd.d/contextual:ro
+    ports:
+      - "10101:10101"
+    expose:
+      - "10101"
+    restart: always

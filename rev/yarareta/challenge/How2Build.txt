@@ -1,0 +1,41 @@
+# How to build the challenge
+
+## Build Yara
+```
+$ ./bootstrap.sh
+$ ./configure --enable-magic
+$ make -j `nproc` 
+```
+
+## Build encryptflag and printflag
+### Build encryptflag
+```
+$ gcc EncryptFlag.c -o EncryptFlag -lcrypto
+$ ./EncryptFlag
+Encrypted flag: \x2f\x93\xf5\xa9\xd4\x7e\x84\xe1\x4c\x79\xb6\xcd\xec\x7b\x15\xa1\xb0\x63\x59\x06\x98\x23\xed\x85\xdd\xe1\x3d\x13\xa3\x1c\x26\xf3\xb0\x6c\x37\x80\x45\x17\x48\x69\xa0\x1d\x23\x32\xcf\xdc\xcf\x86\xa7\xec\x49\x30\x15\x7c\xa2\x1b\x63\x0f\x90\x89\x21\x37\xaa\x18
+```
+
+### Replace the flag of printflag
+```
+#define FLAG "\x2f\x93\xf5\xa9\xd4\x7e\x84\xe1\x4c\x79\xb6\xcd\xec\x7b\x15\xa1\xb0\x63\x59\x06\x98\x23\xed\x85\xdd\xe1\x3d\x13\xa3\x1c\x26\xf3\xb0\x6c\x37\x80\x45\x17\x48\x69\xa0\x1d\x23\x32\xcf\xdc\xcf\x86\xa7\xec\x49\x30\x15\x7c\xa2\x1b\x63\x0f\x90\x89\x21\x37\xaa\x18"
+```
+
+### Build printflag
+```
+$ gcc PrintFlag.c -o PrintFlagOriginal -lcrypto
+$ ./PrintFlagOriginal
+$ readelf -s PrintFlagOriginal | grep key
+    32: 0000000000002010    17 OBJECT  GLOBAL DEFAULT   18 key
+$ ./ReplaceKey.py 0x2010
+```
+
+### Compile Yara Rule
+```
+$ LD_LIBRARY_PATH=./yara/.libs/ ./yara/yarac ./yarareta.yar yarareta 
+```
+
+### Copy to distfiles
+```
+$ cp ./yara/.libs/yara ./yarareta ../distfiles
+$ cp ./yara/.libs/libyara.so.10.0.0 ../distfiles/libyara.so.10
+```

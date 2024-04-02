@@ -1,0 +1,13 @@
+---
+name: "Too Faulty"
+description: >
+  <p>The admin at TooFaulty has led an overhaul of their authentication mechanism. This initiative includes the incorporation of <strong>Two-Factor Authentication</strong> and the assurance of a seamless login process through the implementation of a unique <strong>device identification</strong> solution.</p>
+  <code>http://{host}:{port}</code>
+flag: "ACSC{T0o_F4ulty_T0_B3_4dm1n}"
+author: tsolmon
+port: 80
+tags:
+  - web
+canonical_name: toofaulty
+compose: ./chal/docker-compose.yml
+score: 150

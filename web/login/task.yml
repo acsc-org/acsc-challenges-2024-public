@@ -1,0 +1,11 @@
+name: "Login!"
+description: Here comes yet another boring login page ... <code>http://{host}:{port}</code>
+flag: "ACSC{y3t_an0th3r_l0gin_byp4ss}"
+author: splitline
+port: 5000
+tags:
+  - web
+distfiles: ./dist
+canonical_name: login-web
+compose: ./chal/compose.yml
+score: 100

@@ -1,0 +1,11 @@
+---
+name: Sneaky VEH
+description: >
+  Where is the flag?
+flag: "ACSC{VectOred_EecepTi0n_H@nd1ing_14_C0Ol}"
+author: hank_chen
+tags:
+- rev
+distfiles: ./distfiles
+canonical_name: sneaky-veh
+score: 400

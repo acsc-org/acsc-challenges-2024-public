@@ -1,0 +1,13 @@
+name: "oblivion"
+description: |
+  Just found this weird protocol. Can you help me figure out what it does?
+  <code>nc {host} {port}</code>
+flag: "ACSC{Beware_0f_the_L3aky_4borts_OwO}"
+author: catto
+port: 1234
+tags:
+  - crypto
+distfiles: ./dist
+canonical_name: oblivion
+compose: ./compose.yml
+score: 250

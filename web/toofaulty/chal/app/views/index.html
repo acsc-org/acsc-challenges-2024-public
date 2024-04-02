@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toofaulty</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css" />
+  </head>
+
+  <body>
+    <h1></h1>
+    {% if message %}
+    <div class="message-container">
+      <p>Welcome to TooFaulty App</p>
+      <p>Your app role: {{ message }}</p>
+      <p>
+        For enhanced security and peace of mind, we highly encourage enabling
+        Two-Factor Authentication (2FA). It adds an extra layer of protection to
+        your account, ensuring that only you have access. Embrace a safer
+        experience with just a few simple steps!
+      </p>
+    </div>
+    {% endif %}
+    <div class="buttons-container">
+      <a href="/setup-2fa" class="btn btn-setup-2fa btn-spacing">Setup 2FA</a>
+      <a href="/logout" class="btn btn-logout">Logout</a>
+    </div>
+    <div id="toaster" class="toaster"></div>
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>

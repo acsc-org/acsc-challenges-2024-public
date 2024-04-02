@@ -1,0 +1,12 @@
+name: "RFID_Demod"
+description: >
+  <p>We have obtained analog trace captured by sniffing a rfid writer when it is writing on a T5577 tag. Can you help us find what DATA is being written to it?</p>
+  <code>Flag Format: ACSC{UPPERCASE_HEX}</code>
+
+flag: "ACSC{B1635CAD}"
+author: "Chainfire73"
+tags:
+- hardware
+distfiles: ./distfiles
+canonical_name: rfid-demod
+score: 200

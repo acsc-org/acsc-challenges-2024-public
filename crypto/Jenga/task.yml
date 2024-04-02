@@ -1,0 +1,14 @@
+---
+name: Jenga
+description: |
+  This is a Jenga-inspired block cipher. Please break it :)
+  <code>nc {host} {port}</code>
+flag: "ACSC{b40a78c51c581b7478e910df9ede1f50c036eb60a1fcd9b4146c5f92c6fdd348}"
+author: rbtree
+port: 39425
+tags:
+- crypto
+distfiles: ./distfiles
+canonical_name: jenga
+compose: ./docker-compose.yml
+score: 450

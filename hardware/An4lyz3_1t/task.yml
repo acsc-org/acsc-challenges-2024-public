@@ -1,0 +1,11 @@
+name: "An4lyz3_1t"
+description: >
+  <p>Our surveillance team has managed to tap into a secret serial communication and capture a digital signal using a Saleae logic analyzer. Your objective is to decode the signal and uncover the hidden message.</p>
+flag: "ACSC{b4by4n4lyz3r_548e8c80e}"
+author: "Chainfire73"
+tags:
+- hardware
+- warmup
+distfiles: ./distfiles
+canonical_name: an4lyz3-1t
+score: 50

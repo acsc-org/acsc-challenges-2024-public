@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify 2FA Code</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/verify.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Verify 2FA Code</h1>
+      <form id="verify2FAForm" action="/verify-2fa" method="post">
+        <input
+          type="text"
+          id="code"
+          name="code"
+          placeholder="Enter 2FA code"
+          class="code-input"
+          required
+        />
+        <div class="trust-checkbox">
+          <input type="checkbox" id="trustDevice" name="trustDevice" />
+          <label for="trustDevice">Trust only this device</label>
+        </div>
+        <div id="captcha-container"></div>
+        <input
+          type="text"
+          id="captchaInput"
+          name="captcha"
+          class="captcha-input"
+          placeholder="Enter CAPTCHA"
+          required
+        />
+
+        <div class="button-container">
+          <button type="submit" class="verify-btn">Verify</button>
+          <button
+            type="button"
+            onclick="location.href='/logout';"
+            class="logout-btn"
+          >
+            Logout
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="toaster" class="toaster"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/verify.js"></script>
+  </body>
+</html>

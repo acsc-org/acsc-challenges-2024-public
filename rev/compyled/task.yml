@@ -1,0 +1,11 @@
+---
+name: compyled
+description: >
+  It's just a compiled Python. It won't hurt me...
+flag: "ACSC{d1d_u_notice_the_oob_L04D_C0N5T?}"
+author: splitline
+distfiles: ./dist
+tags:
+- rev
+canonical_name: compyled
+score: 100

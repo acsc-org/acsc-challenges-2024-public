@@ -1,0 +1,11 @@
+---
+name: OAO
+description: >
+  OAO!
+flag: "ACSC{0mg_th3r3_1s_4_\\/m_f0r_dec0mpr3ss}"
+author: terrynini38514
+tags:
+- rev
+distfiles: ./distfiles
+canonical_name: oao
+score: 500

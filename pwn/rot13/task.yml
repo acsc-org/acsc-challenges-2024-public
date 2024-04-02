@@ -1,0 +1,14 @@
+---
+name: "rot13"
+description: >
+  <p>This is the fastest implementation of ROT13!</p>
+  <code>nc {host} {port}</code>
+flag: "ACSC{aRr4y_1nd3X_sh0uLd_b3_uNs1Gn3d}"
+author: ptr-yudai
+port: 9999
+tags:
+  - pwn
+distfiles: ./distfiles
+canonical_name: rot13
+compose: ./docker-compose.yml
+score: 100

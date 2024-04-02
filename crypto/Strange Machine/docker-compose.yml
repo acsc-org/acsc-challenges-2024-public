@@ -1,0 +1,9 @@
+version: '2.4'
+
+services:
+    strangemachine:
+        build: ./
+        platform: linux/amd64
+        ports:
+            - 17777:17777
+        restart: on-failure

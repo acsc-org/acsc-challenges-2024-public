@@ -1,0 +1,11 @@
+version: '3'
+services:
+  life_simulator:
+    build: .
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+      - "9000:9999"
+    entrypoint: /etc/init.sh
+    restart: unless-stopped

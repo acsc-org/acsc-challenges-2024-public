@@ -1,0 +1,29 @@
+version: "3"
+services:
+  toofaulty:
+    build: ./app
+    image: toofaulty
+    environment:
+      MYSQL_HOST: "mysql"
+      MYSQL_DATABASE: "dbfaulty"
+      MYSQL_USER: "userfaulty"
+      MYSQL_PASSWORD: "ndna33sl1"
+      SESSION_SECRET: "p23ld2sn#212io$"
+      FLAG: "ACSC{T0o_F4ulty_T0_B3_4dm1n}"
+    depends_on:
+      - mysql
+    ports:
+      - "80:8002"
+    restart: always
+
+  mysql:
+    build: ./db
+    command: --default-authentication-plugin=mysql_native_password
+    image: toofaulty-db
+    environment:
+      MYSQL_ROOT_PASSWORD: "hgstn2d2"
+      MYSQL_DATABASE: "dbfaulty"
+      MYSQL_USER: "userfaulty"
+      MYSQL_PASSWORD: "ndna33sl1"
+    expose:
+      - "3306"

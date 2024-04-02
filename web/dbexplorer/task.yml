@@ -1,0 +1,15 @@
+---
+name: "DB Explorer"
+description: >
+  <p>Do you know what the db is?</p><br>
+  http://{host}:{port}<br>
+  <strong>mysql server will be restarted every 30 seconds. So, PMA will be logged out every 30 seconds. Please make sure your local payload ready.</strong>
+flag: "ACSC{558b4f968cc61225d6fe55a68454334a}"
+author: sqrtrev
+port: 9000
+tags:
+- web
+distfiles: ./distfiles
+canonical_name: db-exp
+compose: ./challenge/docker-compose.yml
+score: 475

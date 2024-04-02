@@ -1,0 +1,18 @@
+version: "3"
+services:
+  chall:
+    build: ./app
+    ports:
+      - 5000:80
+    environment:
+      - FLAG=ACSC{FAKE_FLAG}
+      - SECRET=FAKE_SECRET
+
+  admin:
+    build: ./admin
+    privileged: true
+    environment:
+      - SECRET=FAKE_SECRET
+      - DOMAIN=chall
+    ports:
+      - 8000:8000

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buggy Bounty</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/utils.js"></script>
+  </head>
+  <body>
+    <div id="head">Buggy Bounty</div>
+    <div id="bar">
+      <div id="red"></div>
+      <div id="yellow"></div>
+      <div id="green"></div>
+    </div>
+    <div id="screen">
+      <p class="font">Report ID:~$</p>
+      <input
+        type="text"
+        class="terminal-input"
+        id="reportId"
+        placeholder="Enter report id..."
+      />
+      <p class="font">Report URL:~$</p>
+      <input
+        type="text"
+        class="terminal-input"
+        id="reportUrl"
+        placeholder="Enter report url..."
+      />
+      <p class="font">Report:~$</p>
+      <input
+        type="text"
+        class="terminal-input"
+        id="bugReport"
+        placeholder="Enter bug explanation..."
+      />
+    </div>
+    <div class="button-container">
+      <button type="button" class="terminal-submit">Submit</button>
+    </div>
+    {% if message %}
+    <div class="message-container">
+      <p id="message">{{ message }}</p>
+    </div>
+    {% endif %}
+  </body>
+</html>

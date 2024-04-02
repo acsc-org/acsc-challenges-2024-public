@@ -1,0 +1,14 @@
+version: '3'
+services:
+  fleeda:
+    build:
+      context: .
+    security_opt:
+      - seccomp:unconfined
+    working_dir: /home/ctf
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+      - "8109:8109"
+    restart: always

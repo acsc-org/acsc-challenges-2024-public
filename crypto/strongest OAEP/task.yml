@@ -1,0 +1,11 @@
+---
+name: strongest OAEP
+description: >
+  OAEP is strongest! I tweeked the MGF and PRNG! I don't know what I am doing! Oh, e is growing!
+flag: "ACSC{O4EP_+_broken_M6F_+_broken_PRN6_=_Textbook_RSA_30f068a6b0db16ab7aa42c85be174e6854630d254f54dbc398e725a10ce09ac7}"
+author: Bono_iPad
+tags:
+- crypto
+distfiles: ./distfiles
+canonical_name: strongest-oaep
+score: 200

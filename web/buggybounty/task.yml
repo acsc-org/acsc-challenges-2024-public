@@ -1,0 +1,14 @@
+name: "Buggy Bounty"
+description: >
+  <p>Are you a skilled security researcher or ethical hacker looking for a challenging and rewarding opportunity? Look no further! We're excited to invite you to participate in our highest-paying Buggy Bounty Program yet.</p>
+  <code>http://{host}:{port}</code>
+flag: "ACSC{y0u_4ch1eved_th3_h1ghest_r3w4rd_1n_th3_Buggy_Bounty_pr0gr4m}"
+author: tsolmon
+port: 80
+tags:
+  - web
+distfiles: ./dist
+canonical_name: buggy-bounty
+compose: ./chal/docker-compose.yml
+score: 275
+allow_internet: true

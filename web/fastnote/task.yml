@@ -1,0 +1,16 @@
+---
+name: "FastNote"
+description: >
+  <p>I heard WebAssembly is super fast, so I made a note-taking app with it. What could go wrong?</p><br>
+  http://{host}:{port}<br>
+  <strong>Test your solution locally and submit it to the admin bot. When submitting to the admin bot, use http://chall:5000 to interact with the challenge.</strong>
+flag: "ACSC{j01n_th3_cult_0f_w3b4ss3mbly}"
+author: zeyu
+port: 8000
+tags:
+- web
+distfiles: ./dist
+canonical_name: fastnote
+compose: ./chall/docker-compose.yml
+score: 500
+allow_internet: true

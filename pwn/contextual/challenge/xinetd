@@ -1,0 +1,14 @@
+service contextual
+{ 
+    disable = no
+    type = UNLISTED
+    wait = no
+    server = /home/Contextual/run.sh
+    socket_type = stream
+    protocol = tcp
+    user = Contextual
+    groups = yes
+    bind = 0.0.0.0
+    port = 10101
+    flags = REUSE
+}

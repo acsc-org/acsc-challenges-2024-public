@@ -1,0 +1,14 @@
+---
+name: Strange Machine
+description: >
+  I have a strange machine that only does some weird field arithmetic and some mod 2^n operations. Am I using it right?
+  <code>nc {host} {port}</code>
+flag: "ACSC{emulated-field-is-so-hard-to-implement-in-zkp}"
+author: rkm0959
+port: 17777
+tags:
+- crypto
+distfiles: ./distfiles
+canonical_name: strange-machine
+compose: ./docker-compose.yml
+score: 500

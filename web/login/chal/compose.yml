@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLAG: ACSC{y3t_an0th3r_l0gin_byp4ss}

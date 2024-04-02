@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: -20px; /* Adjust this value to control the vertical spacing */
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  transform: translateY(-10%); /* Moves the form up from the center */
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px; /* Increased spacing between inputs */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: block;
+}
+
+button {
+  width: 45%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  /* Display buttons in a flex container */
+  justify-content: space-between;
+  /* Align buttons with space between */
+  margin-top: 20px;
+  /* Add margin for spacing */
+}
+
+.button {
+  padding: 15px 30px; /* Increased padding for a bigger size */
+  border-radius: 15px; /* More rounded corners */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1px; /* Space out letters slightly */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.login-button {
+  background-color: #28a745;
+  /* Set login button color */
+  color: white;
+  /* Set text color to white */
+}
+
+.register-button {
+  background-color: #007bff;
+  /* Set register button color */
+  color: white;
+  /* Set text color to white */
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: darken(
+    #4caf50,
+    10%
+  ); /* Darken on hover - adjust for verify-btn */
+  background-color: darken(
+    #f44336,
+    10%
+  ); /* Darken on hover - adjust for logout-btn */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.toaster {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 70px;
+  right: 20px; /* Position it on the bottom right */
+  background-color: #ff4444; /* Red background for errors */
+  color: white;
+  padding: 15px; /* Slightly larger padding for a bigger appearance */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+  font-size: 18px; /* Larger font size for better readability */
+}

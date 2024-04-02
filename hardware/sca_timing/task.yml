@@ -1,0 +1,15 @@
+name: "Vault"
+description: >
+  <p>Can you perform side-channel attack to this vault? The PIN is a 10-digit number.</p>
+  <small>* Python3 is installed on remote.</small>
+  <code>nc {host} {port}</code>
+
+flag: "ACSC{b377er_d3L4y3d_7h4n_N3v3r_b42fd3d840948f3e}"
+author: "v3ct0r, Chainfire73"
+port: 9999
+tags:
+  - hardware
+distfiles: "./distfiles"
+canonical_name: vault
+compose: ./compose.yml
+score: 150

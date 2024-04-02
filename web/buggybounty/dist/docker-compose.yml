@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  bugbounty:
+    build:
+      context: .
+      dockerfile: ./bugbounty/Dockerfile
+    image: bugbounty
+    ports:
+      - "80:80"
+    depends_on:
+      - reward
+    restart: always
+
+  reward:
+    build:
+      context: .
+      dockerfile: ./reward/Dockerfile
+    image: reward
+    environment:
+      FLAG: "ACSC{FAKE_FLAG}"
+    restart: always

@@ -1,0 +1,10 @@
+version: '3'
+  
+services:
+  command-runner:
+    build: .
+    ports:
+      - "10801:10801"
+    expose:
+      - "10801"
+    restart: always

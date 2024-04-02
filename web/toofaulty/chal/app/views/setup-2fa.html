@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/public/css/setup.css" />
+    <title>Setup 2FA</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Setup Two-Factor Authentication</h1>
+      <p>Scan the QR code below with your 2FA app:</p>
+      <img src="{{ data_url }}" alt="QR Code" />
+      <p>
+        After scanning the QR code using Google Authenticator, your next login
+        will require 2FA. Click the "Done" button to proceed.
+      </p>
+
+      <div class="button-container">
+        <form action="/" method="get" style="margin: 0; display: inline-block">
+          <button type="submit" class="button next-screen">Done</button>
+        </form>
+        <a href="/logout" class="button logout">Logout</a>
+      </div>
+    </div>
+  </body>
+</html>

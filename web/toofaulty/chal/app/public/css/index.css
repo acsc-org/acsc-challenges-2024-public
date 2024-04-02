@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Styling for the main heading */
+h1 {
+  margin-top: 2rem;
+  color: #333;
+}
+
+/* Message container styling */
+.message-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Adjustments for button container */
+.buttons-container {
+  text-align: center; /* Center the buttons container */
+  margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Adjusted Buttons styling */
+.btn {
+  display: inline-block; /* Display buttons inline */
+  padding: 15px 30px; /* Increased padding for a bigger size */
+  border-radius: 15px; /* More rounded corners */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1px; /* Space out letters slightly */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-spacing {
+  margin-right: 15px; /* Adjust the space as needed */
+}
+
+.btn-setup-2fa {
+  background-color: #4caf50;
+}
+
+.btn-logout {
+  background-color: #f44336;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:hover,
+.btn:hover {
+  background-color: darken(
+    #4caf50,
+    10%
+  ); /* Darken on hover - adjust for verify-btn */
+  background-color: darken(
+    #f44336,
+    10%
+  ); /* Darken on hover - adjust for logout-btn */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.toaster {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 70px;
+  right: 20px; /* Position it on the bottom right */
+  background-color: #ff4444; /* Red background for errors */
+  color: white;
+  padding: 15px; /* Slightly larger padding for a bigger appearance */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+  font-size: 18px; /* Larger font size for better readability */
+}

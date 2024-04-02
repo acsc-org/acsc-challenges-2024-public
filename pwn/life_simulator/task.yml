@@ -1,0 +1,14 @@
+---
+name: "life_simulator"
+description: >
+  <p>simulate life with this 1-to-1 representation of the real world!</p>
+  <code>nc {host} {port}</code>
+flag: "ACSC{beware_of_the_hidden_allocations!!11!_d78389}"
+author: zafirr 
+port: 9000 
+tags:
+  - pwn
+distfiles: ./distfiles
+canonical_name: life-simulator
+compose: ./docker-compose.yml
+score: 350

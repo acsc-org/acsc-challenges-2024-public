@@ -1,0 +1,15 @@
+name: "PWR_Tr4ce"
+description: >
+  <p>You've been given power traces and text inputs captured from a microcontroller running AES encryption. Your goal is to extract the encryption key.</p><br>
+  <p> EXPERIMENT SETUP </p>
+  <p> scope = chipwhisperer lite </p>
+  <p> target = stm32f3 </p>
+  <p> AES key length = 16 bytes </p>
+
+flag: "ACSC{Pwr!4n4lyz}"
+author: "Chainfire73"
+tags:
+- hardware
+distfiles: ./distfiles
+canonical_name: pwr-tr4ce
+score: 200

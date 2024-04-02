@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  server:
+    image: dbexplorer
+    build: ./server
+    ports:
+      - "9000:80"
+    expose:
+      - 3306
+  pma:
+    image: phpmyadmin:latest
+    environment:
+      - PMA_ARBITRARY=1
+    expose:
+      - 80

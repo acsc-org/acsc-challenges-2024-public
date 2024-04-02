@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px; /* Increased width */
+  margin: 60px auto; /* Increase top margin to center vertically a bit */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increased padding for more space */
+}
+
+h1 {
+  margin-bottom: 30px; /* Increased bottom margin */
+  color: #333333;
+}
+
+/* Adjusted the input field for 2FA code */
+.code-input {
+  width: 100%; /* Make it wider */
+  padding: 15px; /* Increased padding for larger appearance */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  border: 2px solid #cccccc; /* Make border thicker */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Adjusted the input field for 2FA code */
+.captcha-input {
+  width: 35%; /* Make it wider */
+  height: 5px;
+  padding: 15px; /* Increased padding for larger appearance */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  border: 2px solid #cccccc; /* Make border thicker */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Flex container for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Adjusted for even spacing */
+  margin-top: 20px;
+}
+
+/* Styled buttons with a rounded and larger appearance */
+button {
+  padding: 15px 30px; /* Increased padding for a bigger size */
+  border-radius: 20px; /* More rounded corners */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1px; /* Space out letters slightly */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform to transition for a click effect */
+}
+
+.verify-btn {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.logout-btn {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.verify-btn:hover,
+.logout-btn:hover {
+  background-color: darken(
+    #4caf50,
+    10%
+  ); /* Darken on hover - adjust for verify-btn */
+  background-color: darken(
+    #f44336,
+    10%
+  ); /* Darken on hover - adjust for logout-btn */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Adjust the trust-checkbox for inline display */
+.trust-checkbox {
+  display: flex;
+  align-items: center; /* Align items */
+  justify-content: center; /* Center checkbox and label */
+  margin: 20px 0;
+}
+
+.trust-checkbox label {
+  margin-left: 5px;
+  color: #555;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px; /* Increased width */
+  margin: 60px auto; /* Increase top margin to center vertically a bit */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increased padding for more space */
+}
+
+h1 {
+  margin-bottom: 30px; /* Increased bottom margin */
+  color: #333333;
+}
+
+.code-input {
+  width: 90%; /* Adjust width to be slightly less than container width */
+  padding: 10px 15px; /* Adjust padding to make the input smaller */
+  margin: 0 auto 20px auto; /* Ensure it's centered by applying auto margin horizontally */
+  border: 2px solid #cccccc; /* Keep border thickness */
+  border-radius: 8px; /* Keep rounded corners */
+  display: block; /* Ensure it's treated as a block-level element for margin auto to work */
+}
+
+/* Flex container for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Adjusted for even spacing */
+  margin-top: 20px;
+}
+
+/* Styled buttons with a rounded and larger appearance */
+button {
+  padding: 15px 30px; /* Increased padding for a bigger size */
+  border-radius: 15px; /* More rounded corners */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1px; /* Space out letters slightly */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform to transition for a click effect */
+}
+
+.verify-btn {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.logout-btn {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.verify-btn:hover,
+.logout-btn:hover {
+  background-color: darken(
+    #4caf50,
+    10%
+  ); /* Darken on hover - adjust for verify-btn */
+  background-color: darken(
+    #f44336,
+    10%
+  ); /* Darken on hover - adjust for logout-btn */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Adjust the trust-checkbox for inline display */
+.trust-checkbox {
+  display: flex;
+  align-items: center; /* Align items */
+  justify-content: center; /* Center checkbox and label */
+  margin: 20px 0;
+}
+
+.trust-checkbox label {
+  margin-left: 5px;
+  color: #555;
+}
+
+.toaster {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 70px;
+  right: 20px; /* Position it on the bottom right */
+  background-color: #ff4444; /* Red background for errors */
+  color: white;
+  padding: 15px; /* Slightly larger padding for a bigger appearance */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+  font-size: 18px; /* Larger font size for better readability */
+}

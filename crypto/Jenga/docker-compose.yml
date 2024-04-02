@@ -1,0 +1,12 @@
+version: '3'
+  
+services:
+  jenga:
+    build: .
+    ports:
+      - "39425:39425"
+    expose:
+      - "39425"
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=true

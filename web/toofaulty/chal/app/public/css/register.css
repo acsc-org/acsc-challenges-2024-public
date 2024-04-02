@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure label width matches input width */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width of the form area */
+  padding: 10px; /* Comfortable padding inside the input box */
+  margin-bottom: 20px; /* Space between inputs and the button */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Includes padding and border in the element's total width */
+}
+
+button[type="submit"] {
+  width: 50%; /* Reduce width to not span the full width of the form */
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: center; /* Center the button inside the form */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

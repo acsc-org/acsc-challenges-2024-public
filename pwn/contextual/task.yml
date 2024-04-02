@@ -1,0 +1,14 @@
+---
+name: "Contextual"
+description: >
+  <p>In the land of the blind, the contextual optimizer is the king</p>
+  <code>nc {host} {port}</code>
+flag: "ACSC{f4il3d_to_s33_th4t_0ne_c0m1n6_d1dnt_y0u}"
+author: jwang
+port: 10101
+tags:
+  - pwn
+distfiles: ./distfiles
+canonical_name: contextual
+compose: ./challenge/docker-compose.yml
+score: 500

@@ -1,0 +1,11 @@
+---
+name: YaraReTa
+description: >
+  Yara... Re... Ta...
+flag: "ACSC{YaraHasTwoVirtualMachines_92b2c97ac28dd9fcbdf26ae7a7c906fe}"
+author: n4nu
+tags:
+- rev
+distfiles: ./distfiles
+canonical_name: yarareta
+score: 250

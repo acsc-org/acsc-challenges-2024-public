@@ -1,0 +1,14 @@
+---
+name: "fleeda"
+description: >
+  <p>I wrote a sandbox with frida!</p>
+  <code>nc {host} {port}</code>
+flag: "ACSC{fl333333_0u7_0f_c0n7r01_e82616e00791}"
+author: hugeh0ge
+port: 8109
+tags:
+  - pwn
+distfiles: ./distfiles
+canonical_name: fleeda
+compose: ./challenge/docker-compose.yml
+score: 200

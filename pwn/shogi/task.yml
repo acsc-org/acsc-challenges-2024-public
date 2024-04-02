@@ -1,0 +1,14 @@
+---
+name: "Shogi"
+description: >
+  <p>Don't know how to play shogi? Easy, just pwn the game engine instead.</p>
+  <code>nc {host} {port}</code>
+flag: "ACSC{4ssym3tr1c_pr0mo7e_d3mot3_g0es_brrrrr}"
+author: jwang
+port: 10101
+tags:
+  - pwn
+distfiles: ./distfiles
+canonical_name: shogi
+compose: ./challenge/docker-compose.yml
+score: 350

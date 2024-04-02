@@ -1,0 +1,10 @@
+name: "picopico"
+description: |
+  Security personnel in our company have spotted a suspicious USB flash drive. They found a Raspberry Pi Pico board inside the case, but no flash drive board. Here's the firmware dump of the Raspberry Pi Pico board. Could you figure out what this 'USB flash drive' is for?
+flag: "ACSC{349040c16c36fbba8c484b289e0dae6f}"
+author: op
+tags:
+  - hardware
+distfiles: ./distfiles
+canonical_name: picopico
+score: 200

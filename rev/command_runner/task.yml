@@ -1,0 +1,14 @@
+---
+name: Command Runner
+description: |
+  This binary runs your command! Just find a flag file from the server and read it!
+  <code>nc {host} {port}</code>
+flag: "ACSC{b9d1a7555c74959f9026a7d7b3bb08a07e2b3585ca0bd44836483b204a762dcd}"
+author: rbtree
+port: 10801
+tags:
+- rev
+distfiles: ./distfiles
+canonical_name: command-runner
+compose: ./docker-compose.yml
+score: 250

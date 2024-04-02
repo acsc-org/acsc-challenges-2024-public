@@ -1,0 +1,13 @@
+---
+name: RSA Stream2
+description: |
+  I made a stream cipher out of RSA!
+  <small>note: The name 'RSA Stream2' is completely unrelated to the 'RSA Stream' challenge in past ACSC. It is merely the author's whimsical choice and prior knowledge of 'RSA Stream' is not required.</small>
+
+flag: "ACSC{RSA_is_not_for_the_stream_cipher_bau_bau}"
+author: theoremoon
+tags:
+- crypto
+distfiles: ./distfiles/
+canonical_name: rsa-stream2
+score: 100

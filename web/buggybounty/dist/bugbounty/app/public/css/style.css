@@ -1,0 +1,123 @@
+body {
+  background-color: #2b3d50;
+}
+#head {
+  font-family: monospace;
+  color: #fff;
+  margin: auto;
+  padding: 35px;
+  font-size: 40px;
+  text-align: center;
+}
+#bar {
+  text-align: center;
+  width: 750px;
+  height: 25px;
+  background-color: #dad9d9;
+  margin: 0 auto;
+  font-family: monospace;
+  padding: auto;
+  float: none;
+  border-radius: 5px;
+}
+#red {
+  background-color: #e94b35;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -47%;
+  bottom: -20%;
+  position: relative;
+}
+#yellow {
+  background-color: #f0f000;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -44%;
+  bottom: 40%;
+  position: relative;
+  display: block;
+}
+#green {
+  background-color: #1aaf5c;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -41%;
+  bottom: 99%;
+  position: relative;
+  display: block;
+}
+#screen {
+  background-color: #33485e;
+  width: 750px;
+  height: 450px;
+  border-radius: 2%;
+  margin: 0 auto;
+  padding: 1px;
+}
+.font {
+  color: #fff;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: left;
+  position: static;
+}
+
+.terminal-input {
+  background-color: #33485e;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: monospace;
+  font-size: 15px;
+  width: 90%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.terminal-input::placeholder {
+  color: #bbb;
+}
+
+.terminal-submit {
+  background-color: #4caf50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.terminal-submit:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.message-container {
+  background-color: #f0f000; /* Yellow background */
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto; /* Center the container */
+  width: 750px;
+  border-radius: 5px;
+}
+
+.message-container #message {
+  color: #333;
+  font-size: 16px;
+}
